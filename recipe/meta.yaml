@@ -1,4 +1,4 @@
-{% set version = '2.0.14' %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rxode2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rxode2/rxode2_{{ version }}.tar.gz
-  sha256: 0057cd815711835edbe7e43d070e6026040a52c4c14c5d884ab64e3c7f71679c
+  sha256: f621947316ebbc5dba6cff63eaeb7b01aa16553cd64f8e042d5be4d7ed53302b
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -63,15 +63,15 @@ requirements:
     - r-rex
     - r-rxode2et >=2.0.9
     - r-rxode2ll >=2.0.9
-    - r-rxode2parse >=2.0.12
-    - r-rxode2random >=2.0.9
+    - r-rxode2parse >2.0.16
+    - r-rxode2random >2.0.11
     - r-sys
     - libblas
     - liblapack
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-bh
+    #- r-bh
     - r-precisesums >=0.3
     - r-rcpp >=0.12.3
     - r-rcpparmadillo >=0.9.300.2.0
@@ -88,8 +88,8 @@ requirements:
     - r-rex
     - r-rxode2et >=2.0.9
     - r-rxode2ll >=2.0.9
-    - r-rxode2parse >=2.0.12
-    - r-rxode2random >=2.0.9
+    - r-rxode2parse >2.0.16
+    - r-rxode2random >2.0.11
     - r-sys
 
 test:
@@ -101,15 +101,9 @@ about:
   home: https://nlmixr2.github.io/rxode2/
   dev_url: https://github.com/nlmixr2/rxode2/
   license: GPL-3.0-or-later
-  summary: 'Facilities for running simulations from ordinary differential equation (''ODE'')
-    models, such as pharmacometrics and other compartmental models.  A compilation manager
-    translates the ODE model into C, compiles it, and dynamically loads the object code
-    into R for improved computational efficiency.  An event table object facilitates
-    the specification of complex dosing regimens (optional) and sampling schedules.  NB:
-    The use of this package requires both C and Fortran compilers, for details on their
-    use with R please see Section 6.3, Appendix A, and Appendix D in the "R Administration
-    and Installation" manual. Also the code is mostly released under GPL.  The ''VODE''
-    and ''LSODA'' are in the public domain.  The information is available in the inst/COPYRIGHTS.'
+  summary: 'Facilities for running simulations from ordinary differential equation (''ODE'') models, such as pharmacometrics and other compartmental models.  A compilation manager translates the ODE model into C, compiles it, and dynamically loads the object code into R for improved computational efficiency.  An event table
+    object facilitates the specification of complex dosing regimens (optional) and sampling schedules.  NB: The use of this package requires both C and Fortran compilers, for details on their use with R please see Section 6.3, Appendix A, and Appendix D in the "R Administration and Installation" manual. Also the code is
+    mostly released under GPL.  The ''VODE'' and ''LSODA'' are in the public domain.  The information is available in the inst/COPYRIGHTS.'
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
