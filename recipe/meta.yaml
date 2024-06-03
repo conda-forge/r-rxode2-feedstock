@@ -66,8 +66,8 @@ requirements:
     - r-rex
     - r-rxode2et >=2.0.13
     - r-rxode2ll >=2.0.9
-    - r-rxode2parse >2.0.19
-    - r-rxode2random >2.0.13
+    - r-rxode2parse >=2.0.19
+    - r-rxode2random >=2.1.0
     - r-sys
     - libblas
     - liblapack
@@ -91,8 +91,8 @@ requirements:
     - r-rex
     - r-rxode2et >=2.0.13
     - r-rxode2ll >=2.0.9
-    - r-rxode2parse >2.0.19
-    - r-rxode2random >2.0.13
+    - r-rxode2parse >=2.0.19
+    - r-rxode2random >=2.1.0
     - r-sys
 
 test:
