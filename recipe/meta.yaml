@@ -53,6 +53,7 @@ requirements:
     - r-checkmate
     - r-cli >=2.0.0
     - r-data.table >=1.12.4
+    - r-dparser
     - r-ggplot2 >=3.4.0
     - r-inline
     - r-lotri >=0.4.0
@@ -64,6 +65,7 @@ requirements:
     - r-rcpparmadillo >=0.9.300.2.0
     - r-rex
     - r-rxode2ll >=2.0.9
+    - r-sitmo
     - r-sys
     - libblas
     - liblapack
@@ -74,6 +76,7 @@ requirements:
     - r-checkmate
     - r-cli >=2.0.0
     - r-data.table >=1.12.4
+    - r-dparser
     - r-ggplot2 >=3.4.0
     - r-inline
     - r-lotri >=0.4.0
@@ -85,6 +88,7 @@ requirements:
     - r-rcpparmadillo >=0.9.300.2.0
     - r-rex
     - r-rxode2ll >=2.0.9
+    - r-sitmo
     - r-sys
 
 test:
