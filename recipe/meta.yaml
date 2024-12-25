@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rxode2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rxode2/rxode2_{{ version }}.tar.gz
-  sha256: 3bd872536821635d57007911b3f499aea2c497d6347cf1976a84f73f3b27d264
+  sha256: c8f9a733fe9c865ff306d0016ae776fad9af56f75e40b2e854cca2b3f11d5b6a
 
 build:
   number: 1
