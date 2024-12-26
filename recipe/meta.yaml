@@ -20,8 +20,6 @@ build:
     - '*/R.dll'           # [win]
     - '*/Rblas.dll'       # [win]
     - '*/Rlapack.dll'     # [win]
-  # Checking windows to see if it passes. Uncomment the line if it fails.
-  # skip: true  # [win]
 
 requirements:
   build:
