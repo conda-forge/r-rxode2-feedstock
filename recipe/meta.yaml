@@ -72,6 +72,7 @@ requirements:
     - liblapack
     - libopenblas  # [unix]
   run:
+    - libgomp  # [win]
     - r-base
     #- r-bh
     - r-backports
