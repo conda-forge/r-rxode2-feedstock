@@ -20,6 +20,7 @@ build:
     - '*/R.dll'           # [win]
     - '*/Rblas.dll'       # [win]
     - '*/Rlapack.dll'     # [win]
+    - '*/tbb.dll'     # [win]
   # Checking windows to see if it passes. Uncomment the line if it fails.
   # skip: true  # [win]
 
@@ -69,6 +70,7 @@ requirements:
     - r-sys
     - libblas
     - liblapack
+    - libopenblas  # [unix]
   run:
     - r-base
     #- r-bh
