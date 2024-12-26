@@ -20,7 +20,6 @@ build:
     - '*/R.dll'           # [win]
     - '*/Rblas.dll'       # [win]
     - '*/Rlapack.dll'     # [win]
-    - '*/tbb.dll'     # [win]
   # Checking windows to see if it passes. Uncomment the line if it fails.
   # skip: true  # [win]
 
@@ -64,6 +63,7 @@ requirements:
     - r-qs >=0.26.3
     - r-rcpp >=0.12.3
     - r-rcpparmadillo >=0.9.300.2.0
+    - r-rcppparallel
     - r-rex
     - r-rxode2ll >=2.0.9
     - r-sitmo
@@ -89,6 +89,7 @@ requirements:
     - r-qs >=0.26.3
     - r-rcpp >=0.12.3
     - r-rcpparmadillo >=0.9.300.2.0
+    - r-rcppparallel
     - r-rex
     - r-rxode2ll >=2.0.9
     - r-sitmo
