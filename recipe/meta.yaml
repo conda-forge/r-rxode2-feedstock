@@ -56,7 +56,7 @@ requirements:
     - r-dparser
     - r-ggplot2 >=3.4.0
     - r-inline
-    - r-lotri >=0.4.0
+    - r-lotri >=1.0.0
     - r-magrittr
     - r-memoise
     - r-precisesums >=0.3
@@ -79,7 +79,7 @@ requirements:
     - r-dparser
     - r-ggplot2 >=3.4.0
     - r-inline
-    - r-lotri >=0.4.0
+    - r-lotri >=1.0.0
     - r-magrittr
     - r-memoise
     - r-precisesums >=0.3
