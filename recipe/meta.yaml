@@ -70,6 +70,7 @@ requirements:
     - libblas
     - liblapack
     - libopenblas  # [unix]
+    - tbb-devel    # [not win]
   run:
     - libgomp  # [win]
     - r-base
