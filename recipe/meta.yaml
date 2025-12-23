@@ -59,7 +59,7 @@ requirements:
     - r-magrittr
     - r-memoise
     - r-precisesums >=0.3
-    - r-qs >=0.26.3
+    - r-qs2
     - r-rcpp >=0.12.3
     - r-rcpparmadillo >=0.9.300.2.0
     - r-rcppparallel
@@ -86,7 +86,7 @@ requirements:
     - r-magrittr
     - r-memoise
     - r-precisesums >=0.3
-    - r-qs >=0.26.3
+    - r-qs2
     - r-rcpp >=0.12.3
     - r-rcpparmadillo >=0.9.300.2.0
     - r-rcppparallel
