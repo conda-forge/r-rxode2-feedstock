@@ -1,4 +1,4 @@
-{% set version = "5.0.2" %}
+{% set version = "5.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rxode2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rxode2/rxode2_{{ version }}.tar.gz
-  sha256: dbee0b0df49201965ed6c668e88d1922d5cb74db3c054453e65149a1c7905d97
+  sha256: 35903a0929ae605f560c70b8c9074b6c750174e1c13ee9a3b15bf3645852b59b
 
 build:
   number: 0
